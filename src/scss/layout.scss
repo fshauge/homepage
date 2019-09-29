@@ -1,0 +1,45 @@
+.m {
+  &0 {
+    margin: 0;
+  }
+
+  &1 {
+    margin: 0.25rem;
+  }
+
+  &2 {
+    margin: 0.5rem;
+  }
+
+  &3 {
+    margin: 0.75rem;
+  }
+
+  &4 {
+    margin: 1rem;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.row {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+
+  &.align-items-center {
+    align-items: center;
+  }
+}
+
+.col {
+  padding: 0 0.75rem;
+}
+
+.separator {
+  margin: 1rem;
+  border-top: 1px solid #ccc;
+}
