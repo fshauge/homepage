@@ -20,6 +20,9 @@ const Profile = () => (
                 <h3 className="m-1 text-faded font-weight-normal">
                   Full stack utvikler
                 </h3>
+                <h4 className="m-1 text-faded font-weight-normal">
+                  <i className="devicon-github-plain" /> fshauge
+                </h4>
               </div>
             </div>
           </div>
@@ -96,7 +99,17 @@ const Profile = () => (
               </Fragment>
             }
             summary="Desktop app for å forenkle bruken av mobilappen Hold"
-            duration={{ start: "2018", end: "2019" }}
+            duration={{ start: "2018", end: "nå" }}
+          />,
+          <Project
+            name={
+              <Fragment>
+                Rose{" "}
+                <i className="devicon-kotlin-plain colored" title="Swift" />{" "}
+              </Fragment>
+            }
+            summary="Enkel handleliste for å eksperimentere med og lære SwiftUI"
+            duration={{ start: "2019" }}
           />,
           <Project
             name={
