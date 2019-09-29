@@ -4,7 +4,7 @@ const Profile = () => (
   <main className="container">
     <div className="row align-items-center">
       <div className="col">
-        <img className="avatar" src="assets/avatar.png" />
+        <img className="avatar" src="assets/avatar.jpg" />
       </div>
       <div className="col">
         <h1 className="m-1">Markus Hauge</h1>
