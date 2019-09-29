@@ -1,0 +1,9 @@
+@media print {
+  nav {
+    display: none;
+  }
+
+  main > :not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+}
