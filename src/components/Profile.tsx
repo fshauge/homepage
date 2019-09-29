@@ -1,5 +1,6 @@
 import "devicon";
 import React, { Fragment } from "react";
+import BlockList from "./BlockList";
 import Education from "./Education";
 import Project from "./Project";
 import WorkExperience from "./WorkExperience";
@@ -31,9 +32,9 @@ const Profile = () => (
       </section>
     </div>
     <section className="container">
-      <h2 className="my-3">Arbeidserfaring</h2>
-      <ul className="block-list">
-        <li>
+      <BlockList
+        title="Arbeidserfaring"
+        items={[
           <WorkExperience
             // image="https://www.poption.com/favicon.ico"
             company={
@@ -45,9 +46,7 @@ const Profile = () => (
             }
             position="Full stack utvikler - deltid"
             duration={{ start: "Aug 2019", end: "nå" }}
-          />
-        </li>
-        <li>
+          />,
           <WorkExperience
             // image="https://www.poption.com/favicon.ico"
             company={
@@ -59,9 +58,7 @@ const Profile = () => (
             }
             position="Full stack utvikler - intern"
             duration={{ start: "Jul 2019", end: "Aug 2019" }}
-          />
-        </li>
-        <li>
+          />,
           <WorkExperience
             company={
               <Fragment>
@@ -72,25 +69,25 @@ const Profile = () => (
             position="App-utvikler"
             duration={{ start: "Jul 2018", end: "Aug 2018" }}
           />
-        </li>
-      </ul>
+        ]}
+      />
     </section>
     <section className="container">
-      <h2 className="my-3">Utdanning</h2>
-      <ul className="block-list">
-        <li>
+      <BlockList
+        title="Utdanning"
+        items={[
           <Education
             school="Universitetet i Oslo"
             studyProgram="Bachelor i Informatikk: programmering og systemarkitektur"
             duration={{ start: "Aug 2017", end: "Jun 2020" }}
           />
-        </li>
-      </ul>
+        ]}
+      />
     </section>
     <section className="container">
-      <h2 className="my-3">Prosjekter</h2>
-      <ul className="block-list">
-        <li>
+      <BlockList
+        title="Prosjekter"
+        items={[
           <Project
             name={
               <Fragment>
@@ -100,9 +97,7 @@ const Profile = () => (
             }
             summary="Desktop app for å forenkle bruken av mobilappen Hold"
             duration={{ start: "2018", end: "2019" }}
-          />
-        </li>
-        <li>
+          />,
           <Project
             name={
               <Fragment>
@@ -113,8 +108,8 @@ const Profile = () => (
             summary="Enkel handleliste for å eksperimentere med og lære SwiftUI"
             duration={{ start: "2019" }}
           />
-        </li>
-      </ul>
+        ]}
+      />
     </section>
   </main>
 );
