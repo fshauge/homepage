@@ -67,10 +67,6 @@ const Profile = () => (
                   <span className="font-weight-normal">React</span>
                 </span>{" "}
                 <span className="badge pill">
-                  <i className="devicon-ruby-plain colored" title="Ruby" />
-                  <span className="font-weight-normal">Ruby</span>
-                </span>{" "}
-                <span className="badge pill">
                   <i className="devicon-rails-plain colored" title="Rails" />
                   <span className="font-weight-normal">Rails</span>
                 </span>{" "}
@@ -107,10 +103,6 @@ const Profile = () => (
                   <span className="font-weight-normal">React</span>
                 </span>{" "}
                 <span className="badge pill">
-                  <i className="devicon-ruby-plain colored" title="Ruby" />
-                  <span className="font-weight-normal">Ruby</span>
-                </span>{" "}
-                <span className="badge pill">
                   <i className="devicon-rails-plain colored" title="Rails" />
                   <span className="font-weight-normal">Rails</span>
                 </span>{" "}
@@ -142,7 +134,7 @@ const Profile = () => (
                 </span>{" "}
                 <span className="badge pill">
                   <i className="devicon-react-original colored" title="React" />
-                  <span className="font-weight-normal">React</span>
+                  <span className="font-weight-normal">React Native</span>
                 </span>
               </div>
             }
