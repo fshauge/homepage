@@ -22,7 +22,7 @@ const WorkExperience: FC<Props> = ({ image, company, position, duration }) => (
           )}
           <div className="col">
             <h3 className="m-1">{company}</h3>
-            <h4 className="m-1 text-faded font-weight-normal">{position}</h4>
+            <h4 className="m-1 font-weight-normal">{position}</h4>
           </div>
         </div>
       </div>

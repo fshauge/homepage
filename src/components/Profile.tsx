@@ -17,12 +17,10 @@ const Profile = () => (
                 <img className="avatar circle lg" src="assets/avatar.jpg" />
               </div>
               <div className="col">
-                <h1 className="m-1">Markus Hauge</h1>
-                <h3 className="m-1 text-faded font-weight-normal">
-                  Full stack utvikler
-                </h3>
+                <h1 className="my-1">Markus Hauge</h1>
+                <h3 className="my-1 font-weight-normal">Full stack utvikler</h3>
                 <a className="text-faded" href="https://github.com/fshauge">
-                  <h4 className="m-1 font-weight-normal">
+                  <h4 className="my-1 font-weight-normal">
                     <i className="devicon-github-plain" /> fshauge
                   </h4>
                 </a>

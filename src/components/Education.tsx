@@ -16,9 +16,7 @@ const Education: FC<Props> = ({ school, studyProgram, duration }) => (
         <div className="row align-items-center">
           <div className="col">
             <h3 className="m-1">{school}</h3>
-            <h4 className="m-1 text-faded font-weight-normal">
-              {studyProgram}
-            </h4>
+            <h4 className="m-1 font-weight-normal">{studyProgram}</h4>
           </div>
         </div>
       </div>
