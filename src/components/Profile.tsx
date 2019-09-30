@@ -46,11 +46,17 @@ const Profile = () => (
           <WorkExperience
             // image="https://www.poption.com/favicon.ico"
             company={
-              <Fragment>
-                Poption{" "}
-                <i className="devicon-react-original colored" title="React" />{" "}
-                <i className="devicon-rails-plain colored" title="Rails" />
-              </Fragment>
+              <span className="flex-row spacing-horizontal">
+                <span>Poption</span>{" "}
+                <span className="badge sm pill">
+                  <i className="devicon-react-original colored" title="React" />
+                  <span className="font-weight-normal">React</span>
+                </span>{" "}
+                <span className="badge sm pill">
+                  <i className="devicon-rails-plain colored" title="Rails" />
+                  <span className="font-weight-normal">Rails</span>
+                </span>
+              </span>
             }
             position="Full stack utvikler - deltid"
             description={
@@ -64,11 +70,17 @@ const Profile = () => (
           <WorkExperience
             // image="https://www.poption.com/favicon.ico"
             company={
-              <Fragment>
-                Poption{" "}
-                <i className="devicon-react-original colored" title="React" />{" "}
-                <i className="devicon-rails-plain colored" title="Rails" />
-              </Fragment>
+              <span className="flex-row spacing-horizontal">
+                <span>Poption</span>{" "}
+                <span className="badge sm pill">
+                  <i className="devicon-react-original colored" title="React" />
+                  <span className="font-weight-normal">React</span>
+                </span>{" "}
+                <span className="badge sm pill">
+                  <i className="devicon-rails-plain colored" title="Rails" />
+                  <span className="font-weight-normal">Rails</span>
+                </span>
+              </span>
             }
             position="Full stack utvikler - intern"
             description={
@@ -83,10 +95,13 @@ const Profile = () => (
           />,
           <WorkExperience
             company={
-              <Fragment>
-                Quick Systems AS{" "}
-                <i className="devicon-react-original colored" title="React" />
-              </Fragment>
+              <span className="flex-row spacing-horizontal">
+                <span>Quick Systems AS</span>{" "}
+                <span className="badge sm pill">
+                  <i className="devicon-react-original colored" title="React" />
+                  <span className="font-weight-normal">React</span>
+                </span>
+              </span>
             }
             position="App-utvikler"
             description={
@@ -119,27 +134,40 @@ const Profile = () => (
         items={[
           <Project
             name={
-              <Fragment>
-                Holder{" "}
-                <i className="devicon-react-original colored" title="React" />
-              </Fragment>
+              <span className="flex-row spacing-horizontal">
+                <span>Quick Systems AS</span>{" "}
+                <span className="badge sm pill">
+                  <i className="devicon-react-original colored" title="React" />
+                  <span className="font-weight-normal">React</span>
+                </span>
+              </span>
             }
             summary="Desktop app i React og Electron - forenkler bruken av mobilappen Hold"
             url="https://github.com/fshauge/holder"
             duration={{ start: "2018", end: "nå" }}
           />,
           <Project
-            name="Rose"
+            name={
+              <span className="flex-row spacing-horizontal">
+                <span>Rose</span>{" "}
+                <span className="badge sm pill">
+                  <span className="font-weight-normal">Kotlin</span>
+                </span>
+              </span>
+            }
             summary="Deklarativt UI bibliotek for Kotlin - inspirert av React og SwiftUI"
             url="https://github.com/fshauge/rose"
             duration={{ start: "2019", end: "nå" }}
           />,
           <Project
             name={
-              <Fragment>
-                Shopping list{" "}
-                <i className="devicon-swift-plain colored" title="Swift" />{" "}
-              </Fragment>
+              <span className="flex-row spacing-horizontal">
+                <span>Shopping list</span>{" "}
+                <span className="badge sm pill">
+                  <i className="devicon-swift-plain colored" title="Swift" />
+                  <span className="font-weight-normal">Swift</span>
+                </span>
+              </span>
             }
             summary="Enkel handleliste for å eksperimentere med og lære om SwiftUI"
             url="https://github.com/fshauge/swiftui-shopping-list"
