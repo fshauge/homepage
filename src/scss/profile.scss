@@ -37,12 +37,8 @@ ul.block-list {
     border-radius: 0.5rem;
     transition: box-shadow 0.25s ease, transform 0.25s ease;
 
-    &:not(:first-child) {
-      margin-top: 1rem;
-    }
-
     &:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
 
     /*
@@ -57,20 +53,19 @@ ul.block-list {
 
 ul.badge-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-top: -0.5rem;
 
   & > li {
     display: inline-block;
     list-style: none;
     padding: 0;
-
-    &:not(:first-child) {
-      margin-left: 0.25rem;
-    }
+    margin-top: 0.5rem;
 
     &:not(:last-child) {
-      margin-right: 0.25rem;
+      margin-right: 0.5rem;
     }
   }
 }

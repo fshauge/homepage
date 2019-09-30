@@ -29,7 +29,7 @@ const Profile = () => (
               </div>
             </div>
           </div>
-          <div className="col text-align-end text-faded">
+          <div className="col text-align-end text-faded hide">
             <p className="my-1">Høyboveien 12A</p>
             <p className="my-1">markus.hauge@hotmail.com</p>
             <p className="my-1">98881120</p>

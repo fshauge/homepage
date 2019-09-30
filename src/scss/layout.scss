@@ -16,6 +16,12 @@
   flex-direction: row;
 }
 
+@media screen and (max-width: 580px) {
+  .hide {
+    display: none;
+  }
+}
+
 .col {
   margin: 0 0.75rem;
 }
