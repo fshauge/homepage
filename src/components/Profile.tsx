@@ -149,6 +149,7 @@ const Profile = () => (
               { icon: "devicon-css3-plain colored", name: "CSS" },
               { icon: "devicon-java-plain", name: "Java" },
               { icon: "devicon-python-plain colored", name: "Python" },
+              { icon: "devicon-ruby-plain colored", name: "Ruby" },
               { name: "Kotlin" },
               { name: "C#" }
             ]}
@@ -158,7 +159,9 @@ const Profile = () => (
             items={[
               { icon: "devicon-github-plain", name: "GitHub" },
               { icon: "devicon-git-plain colored", name: "Git" },
-              { icon: "devicon-heroku-plain colored", name: "Heroku" }
+              { icon: "devicon-heroku-plain colored", name: "Heroku" },
+              { icon: "devicon-webpack-plain colored", name: "Webpack" },
+              { icon: "devicon-babel-plain colored", name: "Babel" }
             ]}
           />
         ]}
