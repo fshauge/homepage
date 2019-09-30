@@ -1,5 +1,10 @@
 import React from "react";
-import { HashRouter as Router, NavLink, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  NavLink,
+  Route,
+  Switch
+} from "react-router-dom";
 import Home from "./Home";
 import Profile from "./Profile";
 
