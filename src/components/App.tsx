@@ -6,7 +6,7 @@ import Profile from "./Profile";
 const App = () => (
   <Router>
     <nav>
-      <div className="container">
+      <div className="container flex-row align-items-center justify-content-between">
         <ul>
           <li>
             <NavLink to="/" exact>
@@ -17,6 +17,9 @@ const App = () => (
             <NavLink to="/profile">Profil</NavLink>
           </li>
         </ul>
+        <a href="#" onClick={window.print}>
+          🖨
+        </a>
       </div>
     </nav>
     <Switch>

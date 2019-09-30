@@ -26,6 +26,16 @@
   margin: 0 0.75rem;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .justify-content-center {
   justify-content: center;
 }
