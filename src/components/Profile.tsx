@@ -101,7 +101,7 @@ const Profile = () => (
                 <i className="devicon-react-original colored" title="React" />{" "}
               </Fragment>
             }
-            summary="Desktop app for å forenkle bruken av mobilappen Hold"
+            summary="Desktop app i React og Electron - forenkler bruken av mobilappen Hold"
             duration={{ start: "2018", end: "nå" }}
           />,
           <Project
@@ -121,7 +121,7 @@ const Profile = () => (
                 <i className="devicon-swift-plain colored" title="Swift" />{" "}
               </Fragment>
             }
-            summary="Enkel handleliste for å eksperimentere med og lære SwiftUI"
+            summary="Enkel handleliste for å eksperimentere med og lære om SwiftUI"
             duration={{ start: "2019" }}
           />
         ]}
