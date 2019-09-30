@@ -40,7 +40,7 @@ const WorkExperience: FC<Props> = ({
     {description && (
       <div className="row">
         <div className="col">
-          <p className="m-1 text-faded font-italic">{description}</p>
+          <p className="m-1 text-faded font-weight-lighter">{description}</p>
         </div>
       </div>
     )}
