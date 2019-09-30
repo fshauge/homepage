@@ -141,7 +141,7 @@ const Profile = () => (
             ]}
           />,
           <BadgeList
-            title="Språk"
+            title="Programmeringsspråk"
             items={[
               { icon: "devicon-javascript-plain colored", name: "JavaScript" },
               { icon: "devicon-typescript-plain colored", name: "TypeScript" },
