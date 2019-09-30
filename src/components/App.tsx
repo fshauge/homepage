@@ -17,7 +17,13 @@ const App = () => (
             <NavLink to="/profile">Profil</NavLink>
           </li>
         </ul>
-        <a href="#" onClick={window.print}>
+        <a
+          href="#"
+          onClick={e => {
+            e.preventDefault();
+            window.print();
+          }}
+        >
           🖨
         </a>
       </div>
