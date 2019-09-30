@@ -17,7 +17,7 @@ const WorkExperience: FC<Props> = ({ image, company, position, duration }) => (
         <div className="row align-items-center">
           {image && (
             <div className="col">
-              <img className="avatar sm" src={image} />
+              <img className="avatar sm" src={image} alt="Logo" />
             </div>
           )}
           <div className="col">

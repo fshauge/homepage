@@ -14,7 +14,11 @@ const Profile = () => (
           <div className="col">
             <div className="row align-items-center ">
               <div className="col">
-                <img className="avatar circle lg" src="assets/avatar.jpg" />
+                <img
+                  className="avatar circle lg"
+                  src="assets/avatar.jpg"
+                  alt="Avatar"
+                />
               </div>
               <div className="col">
                 <h1 className="my-1">Markus Hauge</h1>
@@ -27,7 +31,7 @@ const Profile = () => (
               </div>
             </div>
           </div>
-          <div className="col text-align-end text-faded hide">
+          <div className="col text-align-end hide">
             <p className="my-1">Høyboveien 12A</p>
             <p className="my-1">markus.hauge@hotmail.com</p>
             <p className="my-1">98881120</p>
