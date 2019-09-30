@@ -104,6 +104,7 @@ const Profile = () => (
               </Fragment>
             }
             summary="Desktop app i React og Electron - forenkler bruken av mobilappen Hold"
+            url="https://github.com/fshauge/holder"
             duration={{ start: "2018", end: "nå" }}
           />,
           <Project
@@ -114,6 +115,7 @@ const Profile = () => (
               </Fragment>
             }
             summary="Deklarativt UI bibliotek for Kotlin - inspirert av React og SwiftUI"
+            url="https://github.com/fshauge/rose"
             duration={{ start: "2019", end: "nå" }}
           />,
           <Project
@@ -124,6 +126,7 @@ const Profile = () => (
               </Fragment>
             }
             summary="Enkel handleliste for å eksperimentere med og lære om SwiftUI"
+            url="https://github.com/fshauge/swiftui-shopping-list"
             duration={{ start: "2019" }}
           />
         ]}
