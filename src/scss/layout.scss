@@ -53,3 +53,15 @@
 .align-items-center {
   align-items: center;
 }
+
+.spacing-horizontal {
+  & > :not(:last-child) {
+    margin-right: 0.25rem;
+  }
+}
+
+.spacing-vertical {
+  & > :not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+}
