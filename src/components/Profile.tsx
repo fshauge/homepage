@@ -1,5 +1,6 @@
 import "devicon";
 import React, { Fragment } from "react";
+import BadgeList from "./BadgeList";
 import BlockList from "./BlockList";
 import Education from "./Education";
 import Project from "./Project";
@@ -20,13 +21,15 @@ const Profile = () => (
                 <h3 className="m-1 text-faded font-weight-normal">
                   Full stack utvikler
                 </h3>
-                <h4 className="m-1 text-faded font-weight-normal">
-                  <i className="devicon-github-plain" /> fshauge
-                </h4>
+                <a className="text-faded" href="https://github.com/fshauge">
+                  <h4 className="m-1 font-weight-normal">
+                    <i className="devicon-github-plain" /> fshauge
+                  </h4>
+                </a>
               </div>
             </div>
           </div>
-          <div className="col text-align-end">
+          <div className="col text-align-end text-faded">
             <p className="my-1">Høyboveien 12A</p>
             <p className="my-1">markus.hauge@hotmail.com</p>
             <p className="my-1">98881120</p>
@@ -120,6 +123,42 @@ const Profile = () => (
             }
             summary="Enkel handleliste for å eksperimentere med og lære SwiftUI"
             duration={{ start: "2019" }}
+          />
+        ]}
+      />
+    </section>
+    <section className="container">
+      <BlockList
+        title="Ferdigheter"
+        items={[
+          <BadgeList
+            title="Rammeverk"
+            items={[
+              { icon: "devicon-react-original colored", name: "React" },
+              { icon: "devicon-express-original", name: "Express" },
+              { icon: "devicon-rails-plain colored", name: "Rails" },
+              { name: "GraphQL" }
+            ]}
+          />,
+          <BadgeList
+            title="Språk"
+            items={[
+              { icon: "devicon-javascript-plain colored", name: "JavaScript" },
+              { icon: "devicon-typescript-plain colored", name: "TypeScript" },
+              { icon: "devicon-html5-plain colored", name: "HTML" },
+              { icon: "devicon-css3-plain colored", name: "CSS" },
+              { icon: "devicon-java-plain", name: "Java" },
+              { name: "Kotlin" },
+              { name: "C#" }
+            ]}
+          />,
+          <BadgeList
+            title="Verktøy"
+            items={[
+              { icon: "devicon-github-plain", name: "GitHub" },
+              { icon: "devicon-git-plain colored", name: "Git" },
+              { icon: "devicon-heroku-plain colored", name: "Heroku" }
+            ]}
           />
         ]}
       />

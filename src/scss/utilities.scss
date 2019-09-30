@@ -20,8 +20,24 @@ $sizes: (
     margin-right: $size;
   }
 
+  .ml-#{$name} {
+    margin-left: $size;
+  }
+
+  .mr-#{$name} {
+    margin-right: $size;
+  }
+
   .my-#{$name} {
     margin-top: $size;
+    margin-bottom: $size;
+  }
+
+  .mt-#{$name} {
+    margin-top: $size;
+  }
+
+  .mb-#{$name} {
     margin-bottom: $size;
   }
 
@@ -37,8 +53,24 @@ $sizes: (
     padding-right: $size;
   }
 
+  .pl-#{$name} {
+    padding-left: $size;
+  }
+
+  .pr-#{$name} {
+    padding-right: $size;
+  }
+
   .py-#{$name} {
     padding-top: $size;
+    padding-bottom: $size;
+  }
+
+  .pt-#{$name} {
+    padding-top: $size;
+  }
+
+  .pb-#{$name} {
     padding-bottom: $size;
   }
 }
