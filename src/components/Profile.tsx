@@ -150,8 +150,8 @@ const Profile = () => (
               { icon: "devicon-java-plain", name: "Java" },
               { icon: "devicon-python-plain colored", name: "Python" },
               { icon: "devicon-ruby-plain colored", name: "Ruby" },
-              { name: "Kotlin" },
-              { name: "C#" }
+              { icon: "devicon-csharp-plain colored", name: "C#" },
+              { name: "Kotlin" }
             ]}
           />,
           <BadgeList
