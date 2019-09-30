@@ -136,9 +136,9 @@ const Profile = () => (
                 <span className="badge pill">
                   <i
                     className="devicon-javascript-plain colored"
-                    title="TypeScript"
+                    title="JavaScript"
                   />
-                  <span className="font-weight-normal">TypeScript</span>
+                  <span className="font-weight-normal">JavaScript</span>
                 </span>{" "}
                 <span className="badge pill">
                   <i className="devicon-react-original colored" title="React" />
