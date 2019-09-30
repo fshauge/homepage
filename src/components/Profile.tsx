@@ -91,9 +91,9 @@ const Profile = () => (
             position="App-utvikler"
             description={
               <Fragment>
-                Utviklet en mobilapp som et supplement til Quick3 sin
-                webløsning. Brukte React Native og Redux for å løse oppgaven.
-                Jobbet i team med to andre studenter.
+                Utviklet en mobilapp som et supplement til Quick3 sin webløsning
+                for timestempling og oppgavestyring. Brukte React Native og
+                Redux for å utvikle appen. Jobbet i team med to andre studenter.
               </Fragment>
             }
             duration={{ start: "Jul 2018", end: "Aug 2018" }}
