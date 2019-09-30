@@ -133,39 +133,51 @@ const Profile = () => (
       <BlockList
         title="Ferdigheter"
         items={[
-          <BadgeList
-            title="Rammeverk"
-            items={[
-              { icon: "devicon-react-original colored", name: "React" },
-              { icon: "devicon-express-original", name: "Express" },
-              { icon: "devicon-rails-plain colored", name: "Rails" },
-              { name: "GraphQL" }
-            ]}
-          />,
-          <BadgeList
-            title="Programmeringsspråk"
-            items={[
-              { icon: "devicon-javascript-plain colored", name: "JavaScript" },
-              { icon: "devicon-typescript-plain colored", name: "TypeScript" },
-              { icon: "devicon-html5-plain colored", name: "HTML" },
-              { icon: "devicon-css3-plain colored", name: "CSS" },
-              { icon: "devicon-java-plain", name: "Java" },
-              { icon: "devicon-python-plain colored", name: "Python" },
-              { icon: "devicon-ruby-plain colored", name: "Ruby" },
-              { icon: "devicon-csharp-plain", name: "C#" },
-              { name: "Kotlin" }
-            ]}
-          />,
-          <BadgeList
-            title="Verktøy"
-            items={[
-              { icon: "devicon-github-plain", name: "GitHub" },
-              { icon: "devicon-git-plain colored", name: "Git" },
-              { icon: "devicon-heroku-plain colored", name: "Heroku" },
-              { icon: "devicon-webpack-plain colored", name: "Webpack" },
-              { icon: "devicon-babel-plain colored", name: "Babel" }
-            ]}
-          />
+          <div className="card">
+            <BadgeList
+              title="Rammeverk"
+              items={[
+                { icon: "devicon-react-original colored", name: "React" },
+                { icon: "devicon-express-original", name: "Express" },
+                { icon: "devicon-rails-plain colored", name: "Rails" },
+                { name: "GraphQL" }
+              ]}
+            />
+          </div>,
+          <div className="card">
+            <BadgeList
+              title="Programmeringsspråk"
+              items={[
+                {
+                  icon: "devicon-javascript-plain colored",
+                  name: "JavaScript"
+                },
+                {
+                  icon: "devicon-typescript-plain colored",
+                  name: "TypeScript"
+                },
+                { icon: "devicon-html5-plain colored", name: "HTML" },
+                { icon: "devicon-css3-plain colored", name: "CSS" },
+                { icon: "devicon-java-plain", name: "Java" },
+                { icon: "devicon-python-plain colored", name: "Python" },
+                { icon: "devicon-ruby-plain colored", name: "Ruby" },
+                { icon: "devicon-csharp-plain", name: "C#" },
+                { name: "Kotlin" }
+              ]}
+            />
+          </div>,
+          <div className="card">
+            <BadgeList
+              title="Verktøy"
+              items={[
+                { icon: "devicon-github-plain", name: "GitHub" },
+                { icon: "devicon-git-plain colored", name: "Git" },
+                { icon: "devicon-heroku-plain colored", name: "Heroku" },
+                { icon: "devicon-webpack-plain colored", name: "Webpack" },
+                { icon: "devicon-babel-plain colored", name: "Babel" }
+              ]}
+            />
+          </div>
         ]}
       />
     </section>

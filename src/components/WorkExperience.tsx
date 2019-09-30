@@ -1,4 +1,4 @@
-import React, { FC, Fragment, ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 
 interface Props {
   image?: string;
@@ -11,7 +11,7 @@ interface Props {
 }
 
 const WorkExperience: FC<Props> = ({ image, company, position, duration }) => (
-  <Fragment>
+  <div className="card">
     <div className="row justify-content-between align-items-center">
       <div className="col">
         <div className="row align-items-center">
@@ -30,7 +30,7 @@ const WorkExperience: FC<Props> = ({ image, company, position, duration }) => (
         {duration.start} - {duration.end}
       </div>
     </div>
-  </Fragment>
+  </div>
 );
 
 export default WorkExperience;

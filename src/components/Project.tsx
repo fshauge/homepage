@@ -1,4 +1,4 @@
-import React, { FC, Fragment, ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 
 interface Props {
   name: ReactNode;
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Project: FC<Props> = ({ name, summary, duration }) => (
-  <Fragment>
+  <div className="card">
     <div className="row justify-content-between align-items-center">
       <div className="col">
         <div className="row align-items-center">
@@ -24,7 +24,7 @@ const Project: FC<Props> = ({ name, summary, duration }) => (
         {duration.end ? `${duration.start} - ${duration.end}` : duration.start}
       </div>
     </div>
-  </Fragment>
+  </div>
 );
 
 export default Project;
