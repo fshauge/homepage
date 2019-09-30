@@ -108,8 +108,8 @@ const Profile = () => (
                 <i className="devicon-kotlin-plain colored" title="Swift" />{" "}
               </Fragment>
             }
-            summary="Enkel handleliste for å eksperimentere med og lære SwiftUI"
-            duration={{ start: "2019" }}
+            summary="Deklarativt UI bibliotek for Kotlin - inspirert av React og SwiftUI"
+            duration={{ start: "2019", end: "nå" }}
           />,
           <Project
             name={
