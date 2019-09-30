@@ -53,18 +53,32 @@ const Profile = () => (
               </Fragment>
             }
             position="Full stack utvikler - deltid"
+            description={
+              <Fragment>
+                Fortsetter utvikling av sommerprosjektet samt nye deler i
+                systemet. Jobber nå tettere sammen med hele Poption-teamet.
+              </Fragment>
+            }
             duration={{ start: "Aug 2019", end: "nå" }}
           />,
           <WorkExperience
             // image="https://www.poption.com/favicon.ico"
             company={
               <Fragment>
-                Poption{" "}
+                Koble / Poption{" "}
                 <i className="devicon-react-original colored" title="React" />{" "}
                 <i className="devicon-rails-plain colored" title="Rails" />
               </Fragment>
             }
             position="Full stack utvikler - intern"
+            description={
+              <Fragment>
+                Utviklet et dashboard i Poption for kunder. Jeg var med i hele
+                designprosessen: intervju, design, prototyping og utvikling.
+                Introduserte React og GraphQL i tech-stacken. Jobbet i team med
+                en annen student.
+              </Fragment>
+            }
             duration={{ start: "Jul 2019", end: "Aug 2019" }}
           />,
           <WorkExperience
@@ -75,6 +89,13 @@ const Profile = () => (
               </Fragment>
             }
             position="App-utvikler"
+            description={
+              <Fragment>
+                Utviklet en mobilapp som et supplement til Quick3 sin
+                webløsning. Brukte React Native og Redux for å løse oppgaven.
+                Jobbet i team med to andre studenter.
+              </Fragment>
+            }
             duration={{ start: "Jul 2018", end: "Aug 2018" }}
           />
         ]}

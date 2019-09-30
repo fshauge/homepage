@@ -4,13 +4,20 @@ interface Props {
   image?: string;
   company: ReactNode;
   position: ReactNode;
+  description?: ReactNode;
   duration: {
     start: ReactNode;
     end: ReactNode;
   };
 }
 
-const WorkExperience: FC<Props> = ({ image, company, position, duration }) => (
+const WorkExperience: FC<Props> = ({
+  image,
+  company,
+  position,
+  description,
+  duration
+}) => (
   <div className="card">
     <div className="row justify-content-between align-items-center">
       <div className="col">
@@ -30,6 +37,13 @@ const WorkExperience: FC<Props> = ({ image, company, position, duration }) => (
         {duration.start} - {duration.end}
       </div>
     </div>
+    {description && (
+      <div className="row">
+        <div className="col">
+          <p className="m-1 text-faded font-italic">{description}</p>
+        </div>
+      </div>
+    )}
   </div>
 );
 

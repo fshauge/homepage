@@ -18,7 +18,9 @@ const Project: FC<Props> = ({ name, summary, url, duration }) => (
           <div className="row align-items-center">
             <div className="col">
               <h3 className="m-1">{name}</h3>
-              <h4 className="m-1 text-faded font-weight-normal">{summary}</h4>
+              <h4 className="m-1 text-faded font-weight-normal font-italic">
+                {summary}
+              </h4>
             </div>
           </div>
         </div>
