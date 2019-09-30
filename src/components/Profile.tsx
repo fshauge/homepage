@@ -148,7 +148,7 @@ const Profile = () => (
               { icon: "devicon-java-plain", name: "Java" },
               { icon: "devicon-python-plain colored", name: "Python" },
               { icon: "devicon-ruby-plain colored", name: "Ruby" },
-              { icon: "devicon-csharp-plain colored", name: "C#" },
+              { icon: "devicon-csharp-plain", name: "C#" },
               { name: "Kotlin" }
             ]}
           />,
