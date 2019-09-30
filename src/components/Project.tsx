@@ -4,13 +4,14 @@ interface Props {
   name: ReactNode;
   summary: ReactNode;
   url: string;
+  badges?: ReactNode;
   duration: {
     start: ReactNode;
     end?: ReactNode;
   };
 }
 
-const Project: FC<Props> = ({ name, summary, url, duration }) => (
+const Project: FC<Props> = ({ name, summary, url, badges, duration }) => (
   <a href={url}>
     <div className="card float">
       <div className="row justify-content-between align-items-center">
@@ -28,6 +29,11 @@ const Project: FC<Props> = ({ name, summary, url, duration }) => (
             : duration.start}
         </div>
       </div>
+      {badges && (
+        <div className="row">
+          <div className="col">{badges}</div>
+        </div>
+      )}
     </div>
   </a>
 );

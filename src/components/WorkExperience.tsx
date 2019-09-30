@@ -5,6 +5,7 @@ interface Props {
   company: ReactNode;
   position: ReactNode;
   description?: ReactNode;
+  badges?: ReactNode;
   duration: {
     start: ReactNode;
     end: ReactNode;
@@ -16,6 +17,7 @@ const WorkExperience: FC<Props> = ({
   company,
   position,
   description,
+  badges,
   duration
 }) => (
   <div className="card">
@@ -42,6 +44,11 @@ const WorkExperience: FC<Props> = ({
         <div className="col">
           <p className="m-1 text-faded font-weight-lighter">{description}</p>
         </div>
+      </div>
+    )}
+    {badges && (
+      <div className="row">
+        <div className="col">{badges}</div>
       </div>
     )}
   </div>

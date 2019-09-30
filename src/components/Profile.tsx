@@ -45,19 +45,7 @@ const Profile = () => (
         items={[
           <WorkExperience
             // image="https://www.poption.com/favicon.ico"
-            company={
-              <span className="flex-row spacing-horizontal">
-                <span>Poption</span>{" "}
-                <span className="badge sm pill">
-                  <i className="devicon-react-original colored" title="React" />
-                  <span className="font-weight-normal">React</span>
-                </span>{" "}
-                <span className="badge sm pill">
-                  <i className="devicon-rails-plain colored" title="Rails" />
-                  <span className="font-weight-normal">Rails</span>
-                </span>
-              </span>
-            }
+            company="Poption"
             position="Full stack utvikler - deltid"
             description={
               <Fragment>
@@ -65,23 +53,37 @@ const Profile = () => (
                 systemet. Jobber nå tettere sammen med hele Poption-teamet.
               </Fragment>
             }
+            badges={
+              <div className="mt-2">
+                <span className="badge pill">
+                  <i
+                    className="devicon-typescript-plain colored"
+                    title="TypeScript"
+                  />
+                  <span className="font-weight-normal">TypeScript</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <i className="devicon-react-original colored" title="React" />
+                  <span className="font-weight-normal">React</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <i className="devicon-ruby-plain colored" title="Ruby" />
+                  <span className="font-weight-normal">Ruby</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <i className="devicon-rails-plain colored" title="Rails" />
+                  <span className="font-weight-normal">Rails</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <span className="font-weight-normal">GraphQL</span>
+                </span>
+              </div>
+            }
             duration={{ start: "Aug 2019", end: "nå" }}
           />,
           <WorkExperience
             // image="https://www.poption.com/favicon.ico"
-            company={
-              <span className="flex-row spacing-horizontal">
-                <span>Poption</span>{" "}
-                <span className="badge sm pill">
-                  <i className="devicon-react-original colored" title="React" />
-                  <span className="font-weight-normal">React</span>
-                </span>{" "}
-                <span className="badge sm pill">
-                  <i className="devicon-rails-plain colored" title="Rails" />
-                  <span className="font-weight-normal">Rails</span>
-                </span>
-              </span>
-            }
+            company="Poption"
             position="Full stack utvikler - intern"
             description={
               <Fragment>
@@ -91,18 +93,36 @@ const Profile = () => (
                 en annen student.
               </Fragment>
             }
+            badges={
+              <div className="mt-2">
+                <span className="badge pill">
+                  <i
+                    className="devicon-typescript-plain colored"
+                    title="TypeScript"
+                  />
+                  <span className="font-weight-normal">TypeScript</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <i className="devicon-react-original colored" title="React" />
+                  <span className="font-weight-normal">React</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <i className="devicon-ruby-plain colored" title="Ruby" />
+                  <span className="font-weight-normal">Ruby</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <i className="devicon-rails-plain colored" title="Rails" />
+                  <span className="font-weight-normal">Rails</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <span className="font-weight-normal">GraphQL</span>
+                </span>
+              </div>
+            }
             duration={{ start: "Jul 2019", end: "Aug 2019" }}
           />,
           <WorkExperience
-            company={
-              <span className="flex-row spacing-horizontal">
-                <span>Quick Systems AS</span>{" "}
-                <span className="badge sm pill">
-                  <i className="devicon-react-original colored" title="React" />
-                  <span className="font-weight-normal">React</span>
-                </span>
-              </span>
-            }
+            company="Quick Systems AS"
             position="App-utvikler"
             description={
               <Fragment>
@@ -110,6 +130,21 @@ const Profile = () => (
                 for timestempling og oppgavestyring. Brukte React Native og
                 Redux for å utvikle appen. Jobbet i team med to andre studenter.
               </Fragment>
+            }
+            badges={
+              <div className="mt-2">
+                <span className="badge pill">
+                  <i
+                    className="devicon-javascript-plain colored"
+                    title="TypeScript"
+                  />
+                  <span className="font-weight-normal">TypeScript</span>
+                </span>{" "}
+                <span className="badge pill">
+                  <i className="devicon-react-original colored" title="React" />
+                  <span className="font-weight-normal">React</span>
+                </span>
+              </div>
             }
             duration={{ start: "Jul 2018", end: "Aug 2018" }}
           />
@@ -133,44 +168,51 @@ const Profile = () => (
         title="Prosjekter"
         items={[
           <Project
-            name={
-              <span className="flex-row spacing-horizontal">
-                <span>Quick Systems AS</span>{" "}
-                <span className="badge sm pill">
+            name="Holder"
+            summary="Desktop app i React og Electron - forenkler bruken av mobilappen Hold"
+            url="https://github.com/fshauge/holder"
+            badges={
+              <div className="mt-2">
+                <span className="badge pill">
+                  <i
+                    className="devicon-javascript-plain colored"
+                    title="JavaScript"
+                  />
+                  <span className="font-weight-normal">JavaScript</span>
+                </span>{" "}
+                <span className="badge pill">
                   <i className="devicon-react-original colored" title="React" />
                   <span className="font-weight-normal">React</span>
                 </span>
-              </span>
+              </div>
             }
-            summary="Desktop app i React og Electron - forenkler bruken av mobilappen Hold"
-            url="https://github.com/fshauge/holder"
             duration={{ start: "2018", end: "nå" }}
           />,
           <Project
-            name={
-              <span className="flex-row spacing-horizontal">
-                <span>Rose</span>{" "}
-                <span className="badge sm pill">
-                  <span className="font-weight-normal">Kotlin</span>
-                </span>
-              </span>
-            }
+            name="Rose"
             summary="Deklarativt UI bibliotek for Kotlin - inspirert av React og SwiftUI"
             url="https://github.com/fshauge/rose"
+            badges={
+              <div className="mt-2">
+                <span className="badge pill">
+                  <span className="font-weight-normal">Kotlin</span>
+                </span>
+              </div>
+            }
             duration={{ start: "2019", end: "nå" }}
           />,
           <Project
-            name={
-              <span className="flex-row spacing-horizontal">
-                <span>Shopping list</span>{" "}
-                <span className="badge sm pill">
+            name="Shopping list"
+            summary="Enkel handleliste for å eksperimentere med og lære om SwiftUI"
+            url="https://github.com/fshauge/swiftui-shopping-list"
+            badges={
+              <div className="mt-2">
+                <span className="badge pill">
                   <i className="devicon-swift-plain colored" title="Swift" />
                   <span className="font-weight-normal">Swift</span>
                 </span>
-              </span>
+              </div>
             }
-            summary="Enkel handleliste for å eksperimentere med og lære om SwiftUI"
-            url="https://github.com/fshauge/swiftui-shopping-list"
             duration={{ start: "2019" }}
           />
         ]}
